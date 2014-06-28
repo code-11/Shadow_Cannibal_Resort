@@ -32,5 +32,23 @@ else {
     mySpeed = 0;
 }
 
-x += lengthdir_x(mySpeed, dir);
-y += lengthdir_y(mySpeed, dir);
+var xmove = lengthdir_x(mySpeed, dir);
+var ymove = lengthdir_y(mySpeed, dir);
+var hbor = sprite_width * 0.3;
+var vbor = sprite_height * 0.3;
+var xcheck = x + xmove + hbor * sign(xmove);
+var ycheck = y + ymove + vbor * sign(ymove);
+var dx = 0;
+var dy = 0;
+if (!collision_rectangle(x, y - vbor,
+        xcheck, y + vbor, obj_wall,
+        false, true)) {
+    x += xmove;
+    dx = xmove;
+}
+if (!collision_rectangle(x - hbor, y,
+        x + hbor, ycheck, obj_wall,
+        false, true)) {
+    y += ymove;
+    dy = ymove;
+}
