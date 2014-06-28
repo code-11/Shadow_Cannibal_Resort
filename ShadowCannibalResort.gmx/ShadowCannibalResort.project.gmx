@@ -28,9 +28,10 @@
     <scripts name="Enemy">
       <script>scripts\EnemyInit.gml</script>
       <script>scripts\EnemyControl.gml</script>
+      <script>scripts\EnemyCheckSight.gml</script>
+      <script>scripts\EnemyPatrol.gml</script>
       <script>scripts\EnemyDraw.gml</script>
       <script>scripts\EnemyDestroy.gml</script>
-      <script>scripts\EnemyCheckSight.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
