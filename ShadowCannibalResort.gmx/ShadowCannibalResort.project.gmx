@@ -7,6 +7,7 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_player</sprite>
+    <sprite>sprites\spr_enemy</sprite>
     <sprite>sprites\spr_wall</sprite>
   </sprites>
   <backgrounds name="background"/>
@@ -20,9 +21,17 @@
       <script>scripts\PlayerDestroy.gml</script>
       <script>scripts\PlayerDraw.gml</script>
     </scripts>
+    <scripts name="Enemy">
+      <script>scripts\EnemyInit.gml</script>
+      <script>scripts\EnemyControl.gml</script>
+      <script>scripts\EnemyDraw.gml</script>
+      <script>scripts\EnemyDestroy.gml</script>
+      <script>scripts\EnemyCheckSight.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
+    <object>objects\obj_enemy</object>
     <object>objects\obj_wall</object>
   </objects>
   <rooms name="rooms">
