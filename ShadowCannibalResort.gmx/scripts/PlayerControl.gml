@@ -1,1 +1,2 @@
-
+PlayerMove();
+PlayerAim();
