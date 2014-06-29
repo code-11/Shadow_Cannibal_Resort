@@ -30,6 +30,7 @@
       <script>scripts\EnemyControl.gml</script>
       <script>scripts\EnemyCheckSight.gml</script>
       <script>scripts\EnemyPatrol.gml</script>
+      <script>scripts\EnemyChooseDirection.gml</script>
       <script>scripts\EnemyDraw.gml</script>
       <script>scripts\EnemyDestroy.gml</script>
     </scripts>
@@ -38,6 +39,7 @@
     <object>objects\obj_player</object>
     <object>objects\obj_enemy</object>
     <object>objects\obj_wall</object>
+    <object>objects\obj_game</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_play</room>
