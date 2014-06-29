@@ -33,4 +33,3 @@ switch (state) {
         break;
 }
 
-EnemyCheckAlert();

@@ -36,8 +36,8 @@ py = y;
 
 alert = false;
 
-minPatrolDist = 64;
-maxPatrolDist = 96;
+minPatrolDist = 128;
+maxPatrolDist = 128;
 
 var hPatrolBound = 128;
 var vPatrolBound = 96;

@@ -47,3 +47,25 @@ if (moveY && !moveX) {
     y -= ymove;
     y += sign(ymove) * chaseSpeedMax;
 }
+
+if (!moveX && !moveY) {
+    escDir = point_direction(x, y, escTarget.x, escTarget.y) - 180;
+    image_angle = escDir;
+    xmove = lengthdir_x(chaseSpeedMax, escDir);
+    ymove = lengthdir_y(chaseSpeedMax, escDir);
+    hbor = sprite_width * 0.4;
+    vbor = sprite_height * 0.4;
+    xcheck = x + xmove + sprite_width * 0.5 * sign(xmove);
+    ycheck = y + ymove + sprite_height * 0.5 * sign(ymove);
+    
+    if (!collision_rectangle(x, y - vbor,
+            xcheck, y + vbor, obj_wall,
+            true, true)) {
+        x += xmove;
+    }
+    if (!collision_rectangle(x - hbor, y,
+            x + hbor, ycheck, obj_wall,
+            true, true)) {
+        y += ymove;
+    }
+}

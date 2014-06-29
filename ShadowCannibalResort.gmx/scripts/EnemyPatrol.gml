@@ -26,6 +26,10 @@ else {
         
         var upperBound = dir + abs(dirAdjust);
         var lowerBound = dir - abs(dirAdjust);
+        if (alert) {
+            upperBound = dir + abs(dirAdjust * 2);
+            lowerBound = dir - abs(dirAdjust * 2);
+        }
         if (image_angle > lowerBound && image_angle < upperBound) {
             image_angle = dir;
             turning = false;

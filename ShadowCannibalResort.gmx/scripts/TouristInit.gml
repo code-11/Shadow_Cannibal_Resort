@@ -31,8 +31,8 @@ py = y;
 minPatrolDist = 48;
 maxPatrolDist = 96;
 
-var hPatrolBound = 96;
-var vPatrolBound = 96;
+var hPatrolBound = 128;
+var vPatrolBound = 128;
 leftBound = x - hPatrolBound;
 rightBound = x + hPatrolBound;
 upBound = y - vPatrolBound;
@@ -55,6 +55,7 @@ chaseSpeed = 0;
 /*
  * TIMERS
  */
+alertStandTimerCap = 1 * room_speed;
 standTimerCap = 2.5 * room_speed;
 standTimer = standTimerCap;
 

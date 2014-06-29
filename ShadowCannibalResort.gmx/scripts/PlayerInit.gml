@@ -9,6 +9,8 @@ image_speed = 0.2;
 dartMax = 3;
 darts = dartMax;
 
+paperclips = 0;
+
 captives = 0;
 
 state = 0;
