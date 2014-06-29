@@ -41,7 +41,7 @@ turning = false;
 /*
  * CHASE
  */
-chaseSpeedMax = 2;
+chaseSpeedMax = 2.3;
 chaseSpeed = 0;
 
 /*

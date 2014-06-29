@@ -16,3 +16,10 @@ state = 0;
  */
 nomTimer = -1;
 nomTimerCap = 3 * room_speed;
+
+canShoot = true;
+canShootTimer = -1;
+canShootTimerCap = 0.5 * room_speed;
+
+spriteRevertTimer = -1;
+spriteRevertTimerCap = 3 * room_speed;
