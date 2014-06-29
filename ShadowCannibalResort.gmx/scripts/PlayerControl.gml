@@ -9,3 +9,5 @@ switch (state) {
         PlayerNoming();
         break;
 }
+
+PlayerDrag();

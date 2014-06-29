@@ -8,7 +8,9 @@ switch (state) {
             speed = 0;
             direction = 0;
             escTimer = escTimerCap;
-            instance_create(x,y,obj_scream);
+            var scream = instance_create(x,y,obj_scream);
+            scream.image_xscale = 0.75;
+            scream.image_yscale = 0.75;
         }
         break;
     case 1:

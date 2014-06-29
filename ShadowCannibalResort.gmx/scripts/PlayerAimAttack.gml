@@ -10,12 +10,25 @@ if (mouse_check_button_pressed(mb_right) && canShoot && darts > 0) {
 }
 
 if (mouse_check_button_pressed(mb_left) && canMelee) {
-    
+    instance_create(x,y,obj_club);
+    canMelee = false;
+    canMeleeTimer = canMeleeTimerCap;
 }
 
-if (keyboard_check_pressed(vk_space) && canNom) {
+if (keyboard_check_pressed(ord('E'))) {
+    if (dragTarget == -1) {
+        var near = instance_nearest(x, y, obj_enemy);
+        if (distance_to_object(near) <= dragRange
+                && near.state == 4) {
+            dragTarget = near;
+        }
+    } else {
+        dragTarget = -1;
+    }
+}
+else if (keyboard_check_pressed(vk_space) && canNom) {
     var near = instance_nearest(x, y, obj_enemy);
-    if (distance_to_object(near) < nomRange) {
+    if (distance_to_object(near) <= nomRange) {
         var checkNom = false;
         var scream = false;
         if (near.object_index == obj_tourist) {
@@ -44,7 +57,7 @@ if (keyboard_check_pressed(vk_space) && canNom) {
             canNomTimer = canNomTimerCap;
             
             if (scream) {
-                near.alert = true;
+                instance_create(x, y, obj_scream);
             }
         }
     }

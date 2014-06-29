@@ -33,4 +33,12 @@ else if (spriteRevertTimer == 0) {
     sprite_index = spr_player;
 }
 
+if (canMeleeTimer > 0) {
+    canMeleeTimer--;
+}
+else if (canMeleeTimer == 0) {
+    canMeleeTimer = -1;
+    canMelee = true;
+}
+
 

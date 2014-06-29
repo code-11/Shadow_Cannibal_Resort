@@ -4,7 +4,9 @@ maxSpeed=3;
 image_index = 1;
 image_speed = 0.2;
 
-darts = 1;
+darts = 100;
+
+captives = 0;
 
 state = 0;
 /*
@@ -17,6 +19,9 @@ canBeSeen = true;
 
 nomRange = 32;
 nomTarget = -1;
+
+dragRange = 32;
+dragTarget = -1;
 
 /*
  * TIMERS
@@ -34,6 +39,10 @@ canShootTimerCap = 0.5 * room_speed;
 
 spriteRevertTimer = -1;
 spriteRevertTimerCap = 3 * room_speed;
+
+canMelee = true;
+canMeleeTimer = -1;
+canMeleeTimerCap = 1 * room_speed;
 
 /*
  * PARTICLES

@@ -71,6 +71,9 @@ else {
         
         if (point_distance(x, y, px, py) <= 2 * speed || boundHit) {
             standTimer = standTimerCap;
+            if (alert) {
+                standTimer = alertStandTimerCap;
+            }
             speed = 0;
             image_speed = 0;
         }

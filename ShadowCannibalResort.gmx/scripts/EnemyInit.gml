@@ -62,5 +62,6 @@ chaseSpeed = 0;
  */
 standTimerCap = 1 * room_speed;
 standTimer = standTimerCap;
+alertStandTimerCap = 0.5 * room_speed;
 
 
