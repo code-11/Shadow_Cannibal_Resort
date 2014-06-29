@@ -8,8 +8,9 @@ else if (nomTimer == 0) {
     state = 0;
     captives++;
     with(nomTarget) {
+        effect_create_above(ef_smoke, x, y, 2, c_red);
         instance_destroy();
-    }
+    }    
     nomTarget = -1;
 }
 
