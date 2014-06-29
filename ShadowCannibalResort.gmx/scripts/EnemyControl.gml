@@ -14,6 +14,7 @@ switch (state) {
         EnemyChase();
         break;
     case 2:
+        sprite_index = spr_guard_shoot;
         image_angle = point_direction(x, y, obj_player.x, obj_player.y);
         if (!EnemyCheckSight()) {
             if (playerLostTimer == -1) {
@@ -25,6 +26,8 @@ switch (state) {
         EnemyEvade();
         break;
     case 4:
+        sprite_index = spr_guard_ko;
+        alert = false;
         speed = 0;
         image_speed = 0;
         escTimer = -1;

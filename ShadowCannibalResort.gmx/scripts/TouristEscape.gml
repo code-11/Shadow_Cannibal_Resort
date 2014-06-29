@@ -31,6 +31,14 @@ if (!collision_rectangle(x - hbor, y,
     moveY = true;
 }
 
+if (collision_rectangle(x - sprite_width * 0.55, y - sprite_height * 0.55,
+        x + sprite_width * 0.55, y - sprite_height * 0.55, escTarget, false, true)) {
+    show_debug_message("escape hit");
+    if (escTimer == -1) {
+        escTimer = escTimerCap;
+    }
+}
+
 if (moveX && !moveY) {
     x -= xmove;
     x += sign(xmove) * chaseSpeedMax;

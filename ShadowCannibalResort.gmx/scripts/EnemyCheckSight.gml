@@ -16,19 +16,17 @@ for (angle = image_angle - fov; angle <= angleCap; angle += angleAdjust) {
         if (wallFound) {
             var playerDist = distance_to_object(obj_player);
             var wallDist = distance_to_object(wallFound);
-			if (playerDist > wallDist) {
-				playerFound = false;
-			}
+if (playerDist > wallDist) {
+playerFound = false;
+}
         }
         if (playerFound) {
-            image_blend = c_red;
             break;
         }
     }
 }
 
 if (!playerFound) {
-    image_blend = c_white;
 }
 
 return playerFound;

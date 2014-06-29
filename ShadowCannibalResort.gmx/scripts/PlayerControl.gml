@@ -6,6 +6,7 @@ switch (state) {
         PlayerAimAttack();
         break;
     case 1:
+        sprite_index = spr_player_eat;
         PlayerNoming();
         break;
 }

@@ -61,4 +61,7 @@ standTimer = standTimerCap;
 escTimer = -1;
 escTimerCap = 1 * room_speed;
 
+alertTimer = -1;
+alertTimerCap = 10 * room_speed;
+
 escTarget = -1;
