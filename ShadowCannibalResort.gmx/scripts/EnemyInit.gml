@@ -4,6 +4,12 @@
 sightR = 256;
 fov = 30; //field of vision (degrees)
 state = 0;
+
+image_angle = random(360);
+direction = image_angle;
+
+image_speed = 0;
+
 /*
 state (soldier):
 0 --> patrol

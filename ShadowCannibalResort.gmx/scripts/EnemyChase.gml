@@ -1,3 +1,5 @@
+image_speed = 0.2;
+
 var chaseDir = point_direction(x, y, obj_player.x, obj_player.y);
 image_angle = chaseDir;
 var xmove = lengthdir_x(chaseSpeedMax, chaseDir);

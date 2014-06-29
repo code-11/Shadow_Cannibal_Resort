@@ -1,6 +1,7 @@
 if (standTimer > 0) {
     //standing, do nothing
     standTimer--;
+    image_speed = 0;
 }
 else if (standTimer == 0) {
     standTimer = -1;
@@ -8,6 +9,7 @@ else if (standTimer == 0) {
 }
 else {    
     if (turning) {
+        image_speed = 0.2;
         if (alert) {
             image_angle += dirAdjust;
         }
@@ -44,6 +46,7 @@ else {
         }
     }
     else {
+        image_speed = 0.2;
         var boundHit = false;
         if (x + lengthdir_x(speed, direction) <= leftBound) {
             atLeft = true;
@@ -69,6 +72,7 @@ else {
         if (point_distance(x, y, px, py) <= 2 * speed || boundHit) {
             standTimer = standTimerCap;
             speed = 0;
+            image_speed = 0;
         }
     }
 }

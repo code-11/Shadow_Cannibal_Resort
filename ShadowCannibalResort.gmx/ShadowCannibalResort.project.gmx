@@ -15,18 +15,20 @@
     <sprite>sprites\spr_player_eat</sprite>
     <sprite>sprites\spr_dart</sprite>
     <sprite>sprites\spr_sound</sprite>
-    <sprite>sprites\spr_tourist</sprite>
+    <sprite>sprites\spr_tourist1</sprite>
+    <sprite>sprites\spr_tourist2</sprite>
     <sprite>sprites\spr_rock</sprite>
+    <sprite>sprites\spr_plant</sprite>
     <sprite>sprites\spr_hwall</sprite>
     <sprite>sprites\spr_vwall</sprite>
     <sprite>sprites\spr_corner1</sprite>
     <sprite>sprites\spr_corner2</sprite>
     <sprite>sprites\spr_corner3</sprite>
     <sprite>sprites\spr_corner4</sprite>
+    <sprite>sprites\spr_club</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_grass</background>
-    <background>background\bg_rock</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">

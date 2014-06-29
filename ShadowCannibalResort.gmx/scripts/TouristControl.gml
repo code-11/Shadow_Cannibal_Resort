@@ -7,6 +7,7 @@ switch (state) {
             state = 3;
             speed = 0;
             direction = 0;
+            escTimer = escTimerCap;
             instance_create(x,y,obj_scream);
         }
         break;
