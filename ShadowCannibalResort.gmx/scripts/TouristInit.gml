@@ -1,14 +1,14 @@
 /*
  * GENERAL
  */
-sightR = 256;
+sightR = 200;
 fov = 30; //field of vision (degrees)
 state = 0;
 /*
 state (soldier):
 0 --> patrol
-1 --> chase/attack player
-2 --> alert
+1 --> chase player
+2 --> attack
 3 --> run away from player
 4 --> KO'd
 */
@@ -16,21 +16,16 @@ state (soldier):
 /*
  * PATROL
  */
-patrolSpeed = 1;
-alertPatrolSpeed = 2;
-
-alertTimer = -1;
-alertTimerCap = 10 * room_speed;
+patrolSpeed = 0.75;
+alertPatrolSpeed = 1.5;
 
 px = x;
 py = y;
 
-alert = false;
-
-minPatrolDist = 64;
+minPatrolDist = 48;
 maxPatrolDist = 96;
 
-var hPatrolBound = 128;
+var hPatrolBound = 96;
 var vPatrolBound = 96;
 leftBound = x - hPatrolBound;
 rightBound = x + hPatrolBound;
@@ -42,19 +37,17 @@ atUp = false;
 atDown = false;
 
 dir = image_angle;
-dirAdjust = 5;
+dirAdjust = 2.5;
 turning = false;
 
 /*
- * CHASE
+ * CHASE / Evade
  */
-chaseSpeedMax = 1.5;
+chaseSpeedMax = 2.3;
 chaseSpeed = 0;
 
 /*
  * TIMERS
  */
-standTimerCap = 1 * room_speed;
+standTimerCap = 2.5 * room_speed;
 standTimer = standTimerCap;
-
-

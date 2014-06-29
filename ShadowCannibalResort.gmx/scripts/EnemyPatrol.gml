@@ -8,7 +8,13 @@ else if (standTimer == 0) {
 }
 else {    
     if (turning) {
-        image_angle += dirAdjust;
+        if (alert) {
+            image_angle += dirAdjust;
+        }
+        else {
+            image_angle += dirAdjust * 2;
+        }
+        
         if (image_angle < 0) {
             image_angle += 360;
         }
@@ -55,7 +61,12 @@ else {
             atDown = true;
             boundHit = true;
         }
-        if (point_distance(x, y, px, py) <= 2 * patrolSpeed || boundHit) {
+        
+        if (alert) {
+            speed = alertPatrolSpeed;
+        }
+        
+        if (point_distance(x, y, px, py) <= 2 * speed || boundHit) {
             standTimer = standTimerCap;
             speed = 0;
         }

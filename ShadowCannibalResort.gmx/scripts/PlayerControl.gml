@@ -3,8 +3,9 @@ PlayerTimers();
 switch (state) {
     case 0:
         PlayerMove();
-        PlayerAimFire();
+        PlayerAimAttack();
         break;
     case 1:
+        PlayerNoming();
         break;
 }

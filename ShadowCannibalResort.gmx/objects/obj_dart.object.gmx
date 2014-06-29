@@ -28,6 +28,8 @@
             <string>direction = obj_player.image_angle;
 image_angle = direction;
 speed = 16;
+
+image_blend = choose(c_blue, c_red, c_purple, c_white, c_aqua, c_orange);
 </string>
           </argument>
         </arguments>
@@ -100,6 +102,8 @@ speed = 0;
           <argument>
             <kind>1</kind>
             <string>instance_destroy();
+
+other.state = 4; //KO enemy
 </string>
           </argument>
         </arguments>

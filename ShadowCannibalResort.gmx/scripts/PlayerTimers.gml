@@ -4,7 +4,17 @@ if (nomTimer > 0) {
 else if (nomTimer == 0) {
     nomTimer = -1;
     sprite_index = spr_player;
+    image_speed = 0;
     state = 0;
+    nomTarget = -1;
+}
+
+if (canNomTimer > 0) {
+    canNomTimer--;
+}
+else if (canNomTimer == 0) {
+    canNomTimer = -1;
+    canNom = true;
 }
 
 if (canShootTimer > 0) {

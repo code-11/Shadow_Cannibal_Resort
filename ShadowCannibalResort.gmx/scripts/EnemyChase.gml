@@ -10,16 +10,35 @@ var dx = 0;
 var dy = 0;
 var moveX = false;
 var moveY = false;
+
+atLeft = false;
+atRight = false;
+atUp = false;
+atDown = false;
+
+if (x + xmove <= leftBound && xmove < 0) {
+    atLeft = true;
+}
+if (x + xmove >= rightBound && xmove > 0) {
+    atRight = true;
+}
+if (y + ymove <= upBound && ymove < 0) {
+    atUp = true;
+}
+if (y + ymove >= downBound && ymove > 0) {
+    atDown = true;
+}
+
 if (!collision_rectangle(x, y - vbor,
         xcheck, y + vbor, obj_wall,
-        false, true)) {
+        false, true) && !atLeft && !atRight) {
     x += xmove;
     dx = xmove;
     moveX = true;
 }
 if (!collision_rectangle(x - hbor, y,
         x + hbor, ycheck, obj_wall,
-        false, true)) {
+        false, true) && !atUp && !atDown) {
     y += ymove;
     dy = ymove;
     moveY = true;
