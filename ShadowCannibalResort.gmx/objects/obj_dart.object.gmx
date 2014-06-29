@@ -101,9 +101,10 @@ speed = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_destroy();
-
-other.state = 4; //KO enemy
+            <string>if (other.state != 4){
+    other.state = 4; //KO enemy
+    instance_destroy();
+}
 </string>
           </argument>
         </arguments>

@@ -21,8 +21,9 @@ switch (state) {
         EnemyEvade();
         break;
     case 4:
-        image_blend = c_blue;
         speed = 0;
+        image_speed = 0;
+        escTimer = -1;
         break;
 }
 

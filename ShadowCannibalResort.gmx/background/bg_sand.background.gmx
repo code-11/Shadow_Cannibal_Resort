@@ -13,7 +13,7 @@
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>500</width>
-  <height>500</height>
+  <width>512</width>
+  <height>512</height>
   <data>images\bg_sand.png</data>
 </background>

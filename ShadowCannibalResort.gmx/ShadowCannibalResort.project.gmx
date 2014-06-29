@@ -12,6 +12,7 @@
     <sprite>sprites\spr_player_dart</sprite>
     <sprite>sprites\spr_player_eat</sprite>
     <sprite>sprites\spr_dart</sprite>
+    <sprite>sprites\spr_dart_icon</sprite>
     <sprite>sprites\spr_club</sprite>
     <sprite>sprites\spr_sound</sprite>
     <sprite>sprites\spr_enemy</sprite>
@@ -28,6 +29,8 @@
     <sprite>sprites\spr_corner3</sprite>
     <sprite>sprites\spr_corner4</sprite>
     <sprite>sprites\spr_house</sprite>
+    <sprite>sprites\spr_light</sprite>
+    <sprite>sprites\spr_x</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_grass</background>
@@ -67,10 +70,16 @@
     </scripts>
     <script>scripts\ClubPlayerSnap.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_hud</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_enemy</object>
     <object>objects\obj_wall</object>
+    <object>objects\obj_plant</object>
+    <object>objects\obj_plant2</object>
+    <object>objects\obj_rock</object>
     <object>objects\obj_game</object>
     <object>objects\obj_dart</object>
     <object>objects\obj_tourist</object>

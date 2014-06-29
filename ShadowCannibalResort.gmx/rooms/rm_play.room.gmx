@@ -100,10 +100,14 @@
     <instance objName="obj_wall" x="1920" y="1920" name="inst_8E0B2B72" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
-    <tile bgName="bg_water" x="1920" y="0" w="512" h="512" xo="0" yo="0" id="10000002" name="inst_1FF1FFB8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_water" x="1920" y="512" w="512" h="512" xo="0" yo="0" id="10000003" name="inst_4508232E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_water" x="1920" y="1024" w="512" h="512" xo="0" yo="0" id="10000004" name="inst_D125C850" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_water" x="1920" y="1536" w="512" h="512" xo="0" yo="0" id="10000005" name="inst_31F58AAC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_sand" x="1536" y="0" w="512" h="512" xo="0" yo="0" id="10000010" name="inst_712347AE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_sand" x="1536" y="512" w="512" h="512" xo="0" yo="0" id="10000011" name="inst_0541B6C7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_sand" x="1536" y="1024" w="512" h="512" xo="0" yo="0" id="10000012" name="inst_A493DF9B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_sand" x="1536" y="1536" w="512" h="512" xo="0" yo="0" id="10000013" name="inst_EAC44146" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_water" x="1920" y="512" w="512" h="512" xo="0" yo="0" id="10000014" name="inst_DC27F350" depth="100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_water" x="1920" y="0" w="512" h="512" xo="0" yo="0" id="10000015" name="inst_AC0EEDC9" depth="100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_water" x="1920" y="1024" w="512" h="512" xo="0" yo="0" id="10000016" name="inst_BF271C6C" depth="100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_water" x="1920" y="1536" w="512" h="512" xo="0" yo="0" id="10000017" name="inst_F2DD4076" depth="100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
