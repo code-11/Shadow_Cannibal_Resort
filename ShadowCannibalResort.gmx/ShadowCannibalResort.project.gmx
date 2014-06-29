@@ -9,11 +9,30 @@
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_player</sprite>
+    <sprite>sprites\spr_player_dart</sprite>
+    <sprite>sprites\spr_player_eat</sprite>
+    <sprite>sprites\spr_dart</sprite>
+    <sprite>sprites\spr_club</sprite>
+    <sprite>sprites\spr_sound</sprite>
     <sprite>sprites\spr_enemy</sprite>
+    <sprite>sprites\spr_tourist1</sprite>
+    <sprite>sprites\spr_tourist2</sprite>
     <sprite>sprites\spr_wall</sprite>
+    <sprite>sprites\spr_rock</sprite>
+    <sprite>sprites\spr_plant</sprite>
+    <sprite>sprites\spr_plant2</sprite>
+    <sprite>sprites\spr_hwall</sprite>
+    <sprite>sprites\spr_vwall</sprite>
+    <sprite>sprites\spr_corner1</sprite>
+    <sprite>sprites\spr_corner2</sprite>
+    <sprite>sprites\spr_corner3</sprite>
+    <sprite>sprites\spr_corner4</sprite>
+    <sprite>sprites\spr_house</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_grass</background>
+    <background>background\bg_sand</background>
+    <background>background\bg_water</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -21,9 +40,12 @@
       <script>scripts\PlayerInit.gml</script>
       <script>scripts\PlayerControl.gml</script>
       <script>scripts\PlayerMove.gml</script>
-      <script>scripts\PlayerAim.gml</script>
+      <script>scripts\PlayerAimAttack.gml</script>
       <script>scripts\PlayerDestroy.gml</script>
       <script>scripts\PlayerDraw.gml</script>
+      <script>scripts\PlayerTimers.gml</script>
+      <script>scripts\PlayerNoming.gml</script>
+      <script>scripts\PlayerDrag.gml</script>
     </scripts>
     <scripts name="Enemy">
       <script>scripts\EnemyInit.gml</script>
@@ -31,15 +53,29 @@
       <script>scripts\EnemyCheckSight.gml</script>
       <script>scripts\EnemyPatrol.gml</script>
       <script>scripts\EnemyChooseDirection.gml</script>
+      <script>scripts\EnemyChase.gml</script>
+      <script>scripts\EnemyEvade.gml</script>
       <script>scripts\EnemyDraw.gml</script>
+      <script>scripts\EnemyAlert.gml</script>
       <script>scripts\EnemyDestroy.gml</script>
+      <script>scripts\EnemyCheckAlert.gml</script>
+      <script>scripts\EnemyTimers.gml</script>
+      <scripts name="Tourist">
+        <script>scripts\TouristInit.gml</script>
+        <script>scripts\TouristControl.gml</script>
+      </scripts>
     </scripts>
+    <script>scripts\ClubPlayerSnap.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_enemy</object>
     <object>objects\obj_wall</object>
     <object>objects\obj_game</object>
+    <object>objects\obj_dart</object>
+    <object>objects\obj_tourist</object>
+    <object>objects\obj_scream</object>
+    <object>objects\obj_club</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_play</room>

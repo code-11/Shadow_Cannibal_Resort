@@ -2,6 +2,7 @@ var dir = 0;
 var moving = true;
 
 mySpeed = maxSpeed;
+image_speed = 0.2;
 
 if (keyboard_check(ord('W')) && keyboard_check(ord('A'))) {
     dir = 135;
@@ -30,6 +31,7 @@ else if (keyboard_check(ord('D'))) {
 else {
     moving = false;
     mySpeed = 0;
+    image_speed = 0;
 }
 
 var xmove = lengthdir_x(mySpeed, dir);
