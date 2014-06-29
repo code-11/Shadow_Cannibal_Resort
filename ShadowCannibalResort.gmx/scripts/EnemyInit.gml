@@ -39,6 +39,12 @@ dirAdjust = 5;
 turning = false;
 
 /*
+ * CHASE
+ */
+chaseSpeedMax = 2;
+chaseSpeed = 0;
+
+/*
  * TIMERS
  */
 standTimerCap = 1 * room_speed;

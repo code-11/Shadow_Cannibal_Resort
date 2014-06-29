@@ -14,6 +14,7 @@
   </sprites>
   <backgrounds name="background">
     <background>background\bg_grass</background>
+    <background>background\bg_rock</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -31,6 +32,8 @@
       <script>scripts\EnemyCheckSight.gml</script>
       <script>scripts\EnemyPatrol.gml</script>
       <script>scripts\EnemyChooseDirection.gml</script>
+      <script>scripts\EnemyChase.gml</script>
+      <script>scripts\EnemyEvade.gml</script>
       <script>scripts\EnemyDraw.gml</script>
       <script>scripts\EnemyDestroy.gml</script>
     </scripts>

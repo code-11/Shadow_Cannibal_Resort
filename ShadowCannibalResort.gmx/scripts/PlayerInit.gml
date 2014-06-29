@@ -1,6 +1,9 @@
 mySpeed=0;
 maxSpeed=3;
 
+image_index = 1;
+image_speed = 0.2;
+
 state = 0;
 /*
     state:
