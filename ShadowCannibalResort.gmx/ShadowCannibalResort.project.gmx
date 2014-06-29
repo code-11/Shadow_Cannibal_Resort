@@ -11,6 +11,9 @@
     <sprite>sprites\spr_player</sprite>
     <sprite>sprites\spr_enemy</sprite>
     <sprite>sprites\spr_wall</sprite>
+    <sprite>sprites\spr_player_dart</sprite>
+    <sprite>sprites\spr_player_eat</sprite>
+    <sprite>sprites\spr_dart</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_grass</background>
@@ -22,9 +25,10 @@
       <script>scripts\PlayerInit.gml</script>
       <script>scripts\PlayerControl.gml</script>
       <script>scripts\PlayerMove.gml</script>
-      <script>scripts\PlayerAim.gml</script>
+      <script>scripts\PlayerAimFire.gml</script>
       <script>scripts\PlayerDestroy.gml</script>
       <script>scripts\PlayerDraw.gml</script>
+      <script>scripts\PlayerTimers.gml</script>
     </scripts>
     <scripts name="Enemy">
       <script>scripts\EnemyInit.gml</script>
@@ -43,6 +47,7 @@
     <object>objects\obj_enemy</object>
     <object>objects\obj_wall</object>
     <object>objects\obj_game</object>
+    <object>objects\obj_dart</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_play</room>

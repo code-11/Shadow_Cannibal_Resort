@@ -3,6 +3,8 @@ switch (state) {
         EnemyPatrol();
         if (EnemyCheckSight()) {
             state = 3;
+            speed = 0;
+            direction = 0;
         }
         break;
     case 1:
