@@ -19,7 +19,7 @@ if (object_index == obj_tourist) {
         escTimer--;
     }
     else if (escTimer == 0) {
-        effect_create_above(ef_smoke, x, y, 1, c_white);
+        effect_create_above(ef_smoke, x, y, 2, c_white);
         instance_destroy();
     }
 }

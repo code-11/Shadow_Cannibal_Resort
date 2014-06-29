@@ -7,7 +7,6 @@ switch (state) {
             state = 3;
             speed = 0;
             direction = 0;
-            escTimer = escTimerCap;
             var scream = instance_create(x,y,obj_scream);
             scream.image_xscale = 0.75;
             scream.image_yscale = 0.75;
