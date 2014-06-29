@@ -17,11 +17,15 @@
     <sprite>sprites\spr_sound</sprite>
     <sprite>sprites\spr_enemy</sprite>
     <sprite>sprites\spr_tourist1</sprite>
+    <sprite>sprites\spr_tourist1_ko</sprite>
     <sprite>sprites\spr_tourist2</sprite>
+    <sprite>sprites\spr_tourist2_ko</sprite>
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_rock</sprite>
     <sprite>sprites\spr_plant</sprite>
     <sprite>sprites\spr_plant2</sprite>
+    <sprite>sprites\spr_bush</sprite>
+    <sprite>sprites\spr_tree</sprite>
     <sprite>sprites\spr_hwall</sprite>
     <sprite>sprites\spr_vwall</sprite>
     <sprite>sprites\spr_corner1</sprite>
@@ -31,6 +35,10 @@
     <sprite>sprites\spr_house</sprite>
     <sprite>sprites\spr_light</sprite>
     <sprite>sprites\spr_x</sprite>
+    <sprite>sprites\spr_guard</sprite>
+    <sprite>sprites\spr_guard_shoot</sprite>
+    <sprite>sprites\spr_guard_ko</sprite>
+    <sprite>sprites\spr_bullet</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_grass</background>
@@ -79,8 +87,11 @@
     <object>objects\obj_player</object>
     <object>objects\obj_enemy</object>
     <object>objects\obj_wall</object>
+    <object>objects\obj_esc</object>
     <object>objects\obj_plant</object>
     <object>objects\obj_plant2</object>
+    <object>objects\obj_bush</object>
+    <object>objects\obj_tree</object>
     <object>objects\obj_rock</object>
     <object>objects\obj_capture</object>
     <object>objects\obj_game</object>
@@ -88,7 +99,6 @@
     <object>objects\obj_tourist</object>
     <object>objects\obj_scream</object>
     <object>objects\obj_club</object>
-    <object>objects\obj_esc</object>
     <object>objects\obj_hut</object>
     <object>objects\obj_hwall</object>
     <object>objects\obj_vwall</object>
@@ -96,6 +106,7 @@
     <object>objects\obj_corner2</object>
     <object>objects\obj_corner3</object>
     <object>objects\obj_corner4</object>
+    <object>objects\obj_bullet</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_play</room>

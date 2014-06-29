@@ -17,9 +17,16 @@ switch (state) {
     case 2:
         break;
     case 3:
-        EnemyEvade();
+        TouristEscape();
         break;
     case 4:
+        if (sprite_index == spr_tourist1) {
+            sprite_index = spr_tourist1_ko;
+        }
+        else if (sprite_index == spr_tourist2) {
+            sprite_index = spr_tourist2_ko;
+        }
+        alert = false;
         speed = 0;
         image_speed = 0;
         escTimer = -1;

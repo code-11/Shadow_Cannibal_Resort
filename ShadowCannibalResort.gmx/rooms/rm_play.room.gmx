@@ -98,7 +98,8 @@
     <instance objName="obj_wall" x="256" y="1920" name="inst_A2BA0045" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="128" y="1920" name="inst_F5BE9364" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1920" y="1920" name="inst_8E0B2B72" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_hut" x="768" y="640" name="inst_861F5AD2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_hut" x="1152" y="768" name="inst_861F5AD2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy" x="512" y="1536" name="inst_F0918FB8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_sand" x="1536" y="0" w="512" h="512" xo="0" yo="0" id="10000010" name="inst_712347AE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
