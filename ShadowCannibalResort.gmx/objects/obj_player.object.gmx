@@ -94,7 +94,19 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_restart();
+            <string>effect_create_above(ef_smoke,x,y,2, c_red);
+
+audio_play_sound(snd_lose, 0, false);
+
+visible = false;
+state = -1;
+if (winTimer &lt; 0) {
+    loseTimer = loseTimerCap;
+}
+
+with(other) {
+    instance_destroy();
+}
 </string>
           </argument>
         </arguments>

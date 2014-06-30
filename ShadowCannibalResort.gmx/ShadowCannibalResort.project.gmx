@@ -5,7 +5,33 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
-    <sound>sound\snd_music</sound>
+    <sound>sound\snd_sneak</sound>
+    <sound>sound\snd_panic</sound>
+    <sound>sound\snd_tribe</sound>
+    <sound>sound\snd_luau</sound>
+    <sound>sound\snd_win</sound>
+    <sound>sound\snd_lose</sound>
+    <sound>sound\snd_thump</sound>
+    <sound>sound\snd_nom</sound>
+    <sound>sound\snd_swish1</sound>
+    <sound>sound\snd_swish2</sound>
+    <sound>sound\snd_stopeating</sound>
+    <sound>sound\snd_moneyback</sound>
+    <sound>sound\snd_ahh</sound>
+    <sound>sound\snd_grunt</sound>
+    <sound>sound\snd_uh</sound>
+    <sound>sound\snd_huh</sound>
+    <sound>sound\snd_ohno</sound>
+    <sound>sound\snd_quitit</sound>
+    <sound>sound\snd_wazzat</sound>
+    <sound>sound\snd_fe_aaak</sound>
+    <sound>sound\snd_fe_ohno</sound>
+    <sound>sound\snd_fe_worstvacation</sound>
+    <sound>sound\snd_fe_death</sound>
+    <sound>sound\snd_death1</sound>
+    <sound>sound\snd_death2</sound>
+    <sound>sound\snd_death3</sound>
+    <sound>sound\snd_walk</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_player</sprite>
@@ -45,6 +71,10 @@
     <sprite>sprites\spr_guard_ko</sprite>
     <sprite>sprites\spr_bullet</sprite>
     <sprite>sprites\spr_table</sprite>
+    <sprite>sprites\sprite37</sprite>
+    <sprite>sprites\spr_clip</sprite>
+    <sprite>sprites\spr_clip_icon</sprite>
+    <sprite>sprites\pt_clip</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_grass</background>
@@ -56,6 +86,8 @@
   <scripts name="scripts">
     <scripts name="Player">
       <script>scripts\PlayerInit.gml</script>
+      <script>scripts\SetWinCond.gml</script>
+      <script>scripts\PlayerCheckWin.gml</script>
       <script>scripts\PlayerControl.gml</script>
       <script>scripts\PlayerMove.gml</script>
       <script>scripts\PlayerAimAttack.gml</script>
@@ -65,7 +97,6 @@
       <script>scripts\PlayerNoming.gml</script>
       <script>scripts\PlayerDrag.gml</script>
       <script>scripts\ClubPlayerSnap.gml</script>
-      <script>scripts\SetWinCond.gml</script>
     </scripts>
     <scripts name="Enemy">
       <script>scripts\EnemyInit.gml</script>
@@ -83,11 +114,14 @@
         <script>scripts\TouristInit.gml</script>
         <script>scripts\TouristControl.gml</script>
         <script>scripts\TouristEscape.gml</script>
+        <script>scripts\TouristPatrol.gml</script>
       </scripts>
     </scripts>
+    <script>scripts\DrawCredits.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_hud</font>
+    <font>fonts\fnt_win</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_player</object>

@@ -2,12 +2,18 @@ EnemyTimers();
 
 switch (state) {
     case 0:
-        EnemyPatrol();
+        TouristPatrol();
         if (EnemyCheckSight()) {
             state = 3;
             speed = 0;
             direction = 0;
             var scream = instance_create(x,y,obj_scream);
+            if (sprite_index == spr_tourist1) {
+                audio_play_sound(snd_ohno, 3, false);
+            }
+            else {
+                audio_play_sound(snd_fe_ohno, 3, false);
+            }
             scream.image_xscale = 0.75;
             scream.image_yscale = 0.75;
         }

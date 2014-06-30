@@ -22,17 +22,17 @@ state (soldier):
 /*
  * PATROL
  */
-patrolSpeed = 0.75;
-alertPatrolSpeed = 1.5;
+patrolSpeed = 0;
+alertPatrolSpeed = 0;
 
 px = x;
 py = y;
 
-minPatrolDist = 48;
-maxPatrolDist = 96;
+minPatrolDist = 0;
+maxPatrolDist = 0;
 
-var hPatrolBound = 128;
-var vPatrolBound = 128;
+var hPatrolBound = 16;
+var vPatrolBound = 16;
 leftBound = x - hPatrolBound;
 rightBound = x + hPatrolBound;
 upBound = y - vPatrolBound;
@@ -43,7 +43,7 @@ atUp = false;
 atDown = false;
 
 dir = image_angle;
-dirAdjust = 2.5;
+dirAdjust = 5;
 turning = false;
 
 /*
@@ -55,7 +55,7 @@ chaseSpeed = 0;
 /*
  * TIMERS
  */
-alertStandTimerCap = 1 * room_speed;
+alertStandTimerCap = 0.5 * room_speed;
 standTimerCap = 2.5 * room_speed;
 standTimer = standTimerCap;
 
