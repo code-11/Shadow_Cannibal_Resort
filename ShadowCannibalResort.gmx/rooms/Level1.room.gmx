@@ -13,7 +13,6 @@
   <code></code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
-  <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>0</isSet>
     <w>0</w>
@@ -51,13 +50,13 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_tourist4" x="1024" y="576" name="inst_8F429E63" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="obj_tourist" x="640" y="640" name="inst_3056887F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player" x="352" y="1664" name="inst_0D239165" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tourist" x="320" y="448" name="inst_2859BF3E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="obj_tourist" x="320" y="448" name="inst_2859BF3E" locked="0" code="spin = false;&#xA;var hPatrolBound = 128;&#xA;var vPatrolBound = 196;&#xA;leftBound = x - hPatrolBound;&#xA;rightBound = x + hPatrolBound;&#xA;upBound = y - vPatrolBound;&#xA;downBound = y + vPatrolBound;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
     <instance objName="obj_barrier" x="1408" y="0" name="inst_D9EF0031" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_barrier" x="384" y="0" name="inst_C2AD8E86" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tourist2" x="576" y="512" name="inst_CE78144F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
-    <instance objName="obj_tourist3" x="640" y="640" name="inst_83813985" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paperclip" x="640" y="832" name="inst_CB2954A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tourist" x="1472" y="512" name="inst_C169723F" locked="0" code="spin = false;&#xA;var hPatrolBound = 256;&#xA;var vPatrolBound = 256;&#xA;leftBound = x - hPatrolBound;&#xA;rightBound = x + hPatrolBound;&#xA;upBound = y - vPatrolBound;&#xA;downBound = y + vPatrolBound;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1888" y="640" name="inst_431FEDE4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_rock2" x="0" y="928" name="inst_9EBC86D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1888" y="768" name="inst_A0B1F32B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -142,7 +141,45 @@
     <instance objName="obj_barrier" x="1792" y="192" name="inst_05E99FB8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_barrier" x="1792" y="64" name="inst_4E5C92BA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_barrier" x="128" y="192" name="inst_A12268C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tourist5" x="1280" y="512" name="inst_81B0E4C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="obj_tourist" x="1024" y="576" name="inst_A1B9598B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paperclip" x="576" y="1664" name="inst_83B2E222" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paperclip" x="768" y="1664" name="inst_A1AFD657" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paperclip" x="960" y="1600" name="inst_96D3933E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paperclip" x="1216" y="1664" name="inst_7B9C693E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paperclip" x="1536" y="1536" name="inst_ADDB1C1C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paperclip" x="1280" y="1280" name="inst_388EC039" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paperclip" x="1728" y="1408" name="inst_E0220448" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paperclip" x="960" y="1152" name="inst_65C88F73" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paperclip" x="1344" y="1024" name="inst_ECC97F94" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paperclip" x="1536" y="832" name="inst_25CC677A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paperclip" x="384" y="960" name="inst_0853B350" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paperclip" x="256" y="1408" name="inst_FDEF7B17" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paperclip" x="256" y="1152" name="inst_AAF9BD49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paperclip" x="1664" y="576" name="inst_2E28B10E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paperclip" x="1536" y="256" name="inst_67D877BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paperclip" x="384" y="192" name="inst_D307E550" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paperclip" x="448" y="192" name="inst_602BEB79" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paperclip" x="512" y="192" name="inst_95FDE843" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paperclip" x="576" y="192" name="inst_6861685C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paperclip" x="640" y="192" name="inst_1842096C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paperclip" x="1344" y="192" name="inst_8188C6FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paperclip" x="1408" y="192" name="inst_99113884" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paperclip" x="1472" y="256" name="inst_D66124C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paperclip" x="1472" y="128" name="inst_C68984E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paperclip" x="1536" y="128" name="inst_19DBCD41" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paperclip" x="1280" y="256" name="inst_C10FA84D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paperclip" x="1280" y="128" name="inst_E460E549" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paperclip" x="832" y="256" name="inst_E3D70E51" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paperclip" x="768" y="256" name="inst_A7CA6BC8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paperclip" x="1152" y="256" name="inst_27176B3F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paperclip" x="1216" y="256" name="inst_FE44F303" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paperclip" x="1280" y="192" name="inst_4C0C69AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paperclip" x="384" y="128" name="inst_72C25032" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paperclip" x="448" y="128" name="inst_3375067C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paperclip" x="512" y="128" name="inst_FA5E6786" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paperclip" x="576" y="128" name="inst_34856249" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paperclip" x="640" y="128" name="inst_0BD32BEB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paperclip" x="1088" y="896" name="inst_1F9D0945" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_grass" x="32" y="992" w="1000" h="1000" xo="0" yo="0" id="10000030" name="inst_238509F5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

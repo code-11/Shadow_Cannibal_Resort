@@ -1,4 +1,5 @@
 SetWinCond();
+randomize();
 
 audio_play_music(choose(snd_panic, snd_tribe, snd_sneak), true);
 
@@ -8,7 +9,7 @@ maxSpeed=3;
 image_index = 1;
 image_speed = 0.2;
 
-dartMax = 3;
+dartMax = 2;
 darts = dartMax;
 
 paperclips = 0;

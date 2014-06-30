@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>TouristInit();
 
-sprite_index = choose(spr_tourist1, spr_tourist2);
+sprite_index = choose(spr_tourist1, spr_tourist2, spr_tourist3, spr_tourist4, spr_tourist5);
 </string>
           </argument>
         </arguments>

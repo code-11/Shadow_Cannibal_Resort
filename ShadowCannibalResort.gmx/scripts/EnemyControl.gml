@@ -2,7 +2,11 @@ EnemyTimers();
 
 switch (state) {
     case 0:
-        EnemyPatrol();
+        if (spin) {
+            EnemySpin();
+        }else {
+            EnemyPatrol();
+        }
         if (EnemyCheckSight()) {
             state = 2;
             speed = 0;

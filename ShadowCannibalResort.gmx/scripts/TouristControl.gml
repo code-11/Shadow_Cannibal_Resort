@@ -2,7 +2,12 @@ EnemyTimers();
 
 switch (state) {
     case 0:
-        TouristPatrol();
+        if (spin) {
+            EnemySpin();
+        }
+        else {
+            EnemyPatrol();
+        }
         if (EnemyCheckSight()) {
             state = 3;
             speed = 0;
@@ -26,11 +31,17 @@ switch (state) {
         TouristEscape();
         break;
     case 4:
-        if (sprite_index == spr_tourist1) {
-            sprite_index = spr_tourist1_ko;
-        }
-        else if (sprite_index == spr_tourist2) {
-            sprite_index = spr_tourist2_ko;
+        switch(sprite_index) {
+            case spr_tourist1:
+                sprite_index = spr_tourist1_ko; break;
+            case spr_tourist2:
+                sprite_index = spr_tourist2_ko; break;
+            case spr_tourist3:
+                sprite_index = spr_tourist3_ko; break;
+            case spr_tourist4:
+                sprite_index = spr_tourist4_ko; break;
+            case spr_tourist5:
+                sprite_index = spr_tourist5_ko; break;
         }
         alert = false;
         speed = 0;

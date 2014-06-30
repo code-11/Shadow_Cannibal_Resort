@@ -39,6 +39,7 @@ alert = false;
 minPatrolDist = 128;
 maxPatrolDist = 128;
 
+spin = true;
 var hPatrolBound = 128;
 var vPatrolBound = 96;
 leftBound = x - hPatrolBound;
