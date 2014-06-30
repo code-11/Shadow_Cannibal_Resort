@@ -3,7 +3,7 @@
   <spriteName>spr_player</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-10</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -121,14 +121,15 @@ paperclips++;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>effect_create_above(ef_smoke,x,y,2, c_red);
-
-audio_play_sound(snd_lose, 0, false);
-
-visible = false;
-state = -1;
-if (winTimer &lt; 0) {
+            <string>
+if (winTimer &lt; 0 &amp;&amp; loseTimer &lt; 0) {
     loseTimer = loseTimerCap;
+    effect_create_above(ef_smoke,x,y,2, c_red);
+    
+    audio_play_sound(snd_lose, 0, false);
+    
+    visible = false;
+    state = -1;
 }
 
 with(other) {

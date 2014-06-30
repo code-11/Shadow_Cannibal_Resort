@@ -14,18 +14,15 @@ if (object_index == obj_tourist) {
     }
     else if (escTimer == 0) {
         effect_create_above(ef_smoke, x, y, 2, c_white);
-        instance_destroy();
-        with(obj_player) {
-            effect_create_above(ef_smoke,x,y,2, c_red);
-            
-            audio_play_sound(snd_lose, 0, false);
-            
-            visible = false;
-            state = -1;
-            if (winTimer < 0) {
-                loseTimer = loseTimerCap;
+        escTimer = -1;
+            with(obj_player) {
+                if (loseTimer < 0) {
+                    effect_create_above(ef_smoke,x,y,2, c_red);
+                    audio_play_sound(snd_lose, 0, false);
+                    room_restart();
+                }
             }
-        }
+        instance_destroy();
     }
 }
 else {

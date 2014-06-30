@@ -29,7 +29,6 @@ if (keyboard_check_pressed(ord('E'))) {
     }
 }
 else if (keyboard_check_pressed(vk_space) && canNom) {
-    audio_play_sound(snd_nom, 0, false);
     var near = instance_nearest(x, y, obj_enemy);
     if (distance_to_object(near) <= nomRange) {
         var checkNom = false;
@@ -37,6 +36,7 @@ else if (keyboard_check_pressed(vk_space) && canNom) {
             checkNom = true;
         }
         if (checkNom) {
+            audio_play_sound(snd_nom, 0, false);
             nomTarget = near;
             
             state = 1;

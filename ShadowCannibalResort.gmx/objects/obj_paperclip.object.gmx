@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>effect_create_above(ef_spark, x,y, 2, c_white);
+            <string>effect_create_above(ef_spark, x + 24, y + 24, 2, c_white);
+
+audio_play_sound(snd_pickup, 1, false);
 </string>
           </argument>
         </arguments>

@@ -168,6 +168,7 @@
     <object>objects\obj_table</object>
     <object>objects\object31</object>
     <object>objects\obj_paperclip</object>
+    <object>objects\obj_clips</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Level1</room>

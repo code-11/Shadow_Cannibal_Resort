@@ -32,6 +32,7 @@ switch (state) {
         EnemyEvade();
         break;
     case 4:
+        shootTimer = -1;
         sprite_index = spr_guard_ko;
         alert = false;
         speed = 0;
