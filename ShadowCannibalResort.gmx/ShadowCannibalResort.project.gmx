@@ -45,6 +45,7 @@
     <sprite>sprites\spr_guard_ko</sprite>
     <sprite>sprites\spr_bullet</sprite>
     <sprite>sprites\spr_table</sprite>
+    <sprite>sprites\sprite37</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_grass</background>
@@ -127,6 +128,7 @@
     <room>rooms\Level1</room>
     <room>rooms\rm_play</room>
     <room>rooms\Level2</room>
+    <room>rooms\Level3</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
