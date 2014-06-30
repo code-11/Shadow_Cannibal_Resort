@@ -12,3 +12,5 @@ switch (state) {
 }
 
 PlayerDrag();
+
+PlayerCheckWin();

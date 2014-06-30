@@ -94,8 +94,18 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>state = 4;
-alert = false;
+            <string>if (state != 4) {
+    state = 4;
+    alert = false;
+    if (sprite_index == spr_tourist2) {
+        audio_play_sound(choose(snd_fe_ohno, snd_fe_aaak, snd_fe_worstvacation), 2, false);
+    }
+    else {
+        audio_play_sound(snd_grunt, 1, false);
+    }
+    audio_play_sound(snd_thump, 2, false);
+    effect_create_above(ef_firework, x, y, 0, c_red);
+}
 </string>
           </argument>
         </arguments>
@@ -142,8 +152,12 @@ alert = false;
           <argument>
             <kind>1</kind>
             <string>if (speed &gt; 0) {
-    speed = 0;
+
     standTimer = standTimerCap;
+    x += lengthdir_x(speed, direction - 180);
+    y += lengthdir_y(speed, direction - 180);
+    
+    speed = 0;
 }
 </string>
           </argument>

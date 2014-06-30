@@ -8,7 +8,9 @@ switch (state) {
             speed = 0;
             direction = 0;
             shootTimer = shootTimerCap;
+            audio_play_sound(choose(snd_wazzat, snd_huh), 3, false);
         }
+        EnemySeeUnconsciousPerson();
         break;
     case 1:
         EnemyChase();

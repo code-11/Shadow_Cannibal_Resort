@@ -1,5 +1,7 @@
 SetWinCond();
 
+audio_play_music(choose(snd_panic, snd_tribe, snd_sneak), true);
+
 mySpeed=0;
 maxSpeed=3;
 
@@ -49,6 +51,12 @@ canMelee = true;
 canMeleeTimer = -1;
 canMeleeTimerCap = 0.4 * room_speed;
 
+winTimer = -1;
+winTimerCap = 3 * room_speed;
+
+loseTimer = -1;
+loseTimerCap = 3 * room_speed;
+
 /*
  * PARTICLES
  */
@@ -68,3 +76,5 @@ part_type_blend(ptNom,0);
 part_type_life(ptNom,10,20);
 
 part_system_depth(psmain, -1000);
+
+

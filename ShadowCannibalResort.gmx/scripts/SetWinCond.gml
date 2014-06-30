@@ -1,3 +1,12 @@
 globalvar gv_captivesNeeded;
 
-gv_captivesNeeded = 1;
+switch (room)
+{
+    case Level1:
+        gv_captivesNeeded = 5;
+        break;
+    case Level2:
+        gv_captivesNeeded = 5;
+        break;
+}
+

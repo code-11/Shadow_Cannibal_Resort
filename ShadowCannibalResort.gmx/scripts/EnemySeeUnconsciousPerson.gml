@@ -22,6 +22,7 @@ for (angle = image_angle - fov; angle <= angleCap; angle += angleAdjust) {
         }
         if (enemyFound) {
             alert = true;
+            audio_play_sound(choose(snd_wazzat, snd_huh), 3, false);
             break;
         }
     }
