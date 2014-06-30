@@ -22,17 +22,18 @@ state (soldier):
 /*
  * PATROL
  */
-patrolSpeed = 0;
-alertPatrolSpeed = 0;
+patrolSpeed = 0.75;
+alertPatrolSpeed = 1.5;
 
 px = x;
 py = y;
 
-minPatrolDist = 0;
-maxPatrolDist = 0;
+minPatrolDist = 32;
+maxPatrolDist = 96;
 
-var hPatrolBound = 16;
-var vPatrolBound = 16;
+spin = true;
+var hPatrolBound = 128;
+var vPatrolBound = 128;
 leftBound = x - hPatrolBound;
 rightBound = x + hPatrolBound;
 upBound = y - vPatrolBound;
@@ -43,7 +44,7 @@ atUp = false;
 atDown = false;
 
 dir = image_angle;
-dirAdjust = 5;
+dirAdjust = 2.5;
 turning = false;
 
 /*
