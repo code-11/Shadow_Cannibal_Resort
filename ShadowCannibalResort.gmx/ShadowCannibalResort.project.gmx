@@ -20,6 +20,12 @@
     <sprite>sprites\spr_tourist1_ko</sprite>
     <sprite>sprites\spr_tourist2</sprite>
     <sprite>sprites\spr_tourist2_ko</sprite>
+    <sprite>sprites\spr_tourist3</sprite>
+    <sprite>sprites\spr_tourist3_ko</sprite>
+    <sprite>sprites\spr_tourist4</sprite>
+    <sprite>sprites\spr_tourist4_ko</sprite>
+    <sprite>sprites\spr_tourist5</sprite>
+    <sprite>sprites\spr_tourist5_ko</sprite>
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_rock</sprite>
     <sprite>sprites\spr_plant</sprite>
@@ -106,6 +112,7 @@
     <object>objects\obj_game</object>
     <object>objects\obj_dart</object>
     <object>objects\obj_tourist</object>
+    <object>objects\obj_tourist2</object>
     <object>objects\obj_scream</object>
     <object>objects\obj_club</object>
     <object>objects\obj_hut</object>
@@ -123,6 +130,7 @@
     <object>objects\obj_bullet</object>
     <object>objects\obj_tree</object>
     <object>objects\obj_table</object>
+    <object>objects\object31</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Level1</room>
