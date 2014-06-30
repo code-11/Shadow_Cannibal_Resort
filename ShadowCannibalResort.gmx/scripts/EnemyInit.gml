@@ -28,6 +28,9 @@ alertPatrolSpeed = 2;
 alertTimer = -1;
 alertTimerCap = 10 * room_speed;
 
+shootTimer = -1;
+shootTimerCap = 2 * room_speed;
+
 px = x;
 py = y;
 
@@ -64,4 +67,6 @@ standTimerCap = 1 * room_speed;
 standTimer = standTimerCap;
 alertStandTimerCap = 0.5 * room_speed;
 
+playerLostTimerCap = 3 * room_speed;
+playerLostTimer = -1;
 

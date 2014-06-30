@@ -59,4 +59,6 @@ standTimerCap = 2.5 * room_speed;
 standTimer = standTimerCap;
 
 escTimer = -1;
-escTimerCap = 10 * room_speed;
+escTimerCap = 1 * room_speed;
+
+escTarget = -1;

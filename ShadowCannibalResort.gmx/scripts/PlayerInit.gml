@@ -1,10 +1,13 @@
+SetWinCond();
+
 mySpeed=0;
 maxSpeed=3;
 
 image_index = 1;
 image_speed = 0.2;
 
-darts = 100;
+dartMax = 3;
+darts = dartMax;
 
 captives = 0;
 
@@ -35,14 +38,14 @@ canNomTimerCap = 10 * room_speed;
 
 canShoot = true;
 canShootTimer = -1;
-canShootTimerCap = 0.5 * room_speed;
+canShootTimerCap = 0.3 * room_speed;
 
 spriteRevertTimer = -1;
 spriteRevertTimerCap = 3 * room_speed;
 
 canMelee = true;
 canMeleeTimer = -1;
-canMeleeTimerCap = 1 * room_speed;
+canMeleeTimerCap = 0.4 * room_speed;
 
 /*
  * PARTICLES

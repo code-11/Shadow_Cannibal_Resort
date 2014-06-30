@@ -6,6 +6,9 @@ else if (nomTimer == 0) {
     sprite_index = spr_player;
     image_speed = 0;
     state = 0;
+    with(nomTarget) {
+        instance_destroy();
+    }
     nomTarget = -1;
 }
 

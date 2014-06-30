@@ -4,22 +4,30 @@ switch (state) {
     case 0:
         EnemyPatrol();
         if (EnemyCheckSight()) {
-            state = 1;
+            state = 2;
             speed = 0;
             direction = 0;
+            shootTimer = shootTimerCap;
         }
         break;
     case 1:
         EnemyChase();
         break;
     case 2:
+        image_angle = point_direction(x, y, obj_player.x, obj_player.y);
+        if (!EnemyCheckSight()) {
+            if (playerLostTimer == -1) {
+                playerLostTimer = playerLostTimerCap;
+            }
+        }
         break;
     case 3:
         EnemyEvade();
         break;
     case 4:
-        image_blend = c_blue;
         speed = 0;
+        image_speed = 0;
+        escTimer = -1;
         break;
 }
 
