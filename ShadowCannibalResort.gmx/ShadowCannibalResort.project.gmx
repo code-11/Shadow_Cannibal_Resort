@@ -113,6 +113,9 @@
     <object>objects\obj_dart</object>
     <object>objects\obj_tourist</object>
     <object>objects\obj_tourist2</object>
+    <object>objects\obj_tourist3</object>
+    <object>objects\obj_tourist4</object>
+    <object>objects\obj_tourist5</object>
     <object>objects\obj_scream</object>
     <object>objects\obj_club</object>
     <object>objects\obj_hut</object>
