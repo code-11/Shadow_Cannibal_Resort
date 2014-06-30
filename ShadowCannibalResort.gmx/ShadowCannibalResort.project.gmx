@@ -172,13 +172,7 @@
     <room>rooms\Level1</room>
     <room>rooms\Level2</room>
     <room>rooms\Level3</room>
-<<<<<<< HEAD
-<<<<<<< HEAD
     <room>rooms\rm_play</room>
-=======
->>>>>>> 8ce356732d6511b56010d9f6e214c78a79fbedbe
-=======
->>>>>>> 8ce356732d6511b56010d9f6e214c78a79fbedbe
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
