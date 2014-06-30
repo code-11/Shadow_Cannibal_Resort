@@ -1,3 +1,5 @@
+EnemyInit();
+
 /*
  * GENERAL
  */

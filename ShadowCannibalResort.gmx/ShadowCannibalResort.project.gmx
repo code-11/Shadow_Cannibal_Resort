@@ -31,7 +31,7 @@
     <sound>sound\snd_death1</sound>
     <sound>sound\snd_death2</sound>
     <sound>sound\snd_death3</sound>
-    <sound>sound\snd_walk</sound>
+    <sound>sound\snd_pickup</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_player</sprite>
