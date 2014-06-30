@@ -81,14 +81,23 @@
     <sprite>sprites\spr_clip</sprite>
     <sprite>sprites\spr_clip_icon</sprite>
     <sprite>sprites\pt_clip</sprite>
+    <sprite>sprites\Spr_text_backdrop</sprite>
+    <sprite>sprites\Spr_txt_CREDITS</sprite>
+    <sprite>sprites\Spr_txt_PLAY</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_grass</background>
     <background>background\bg_sand</background>
     <background>background\bg_water</background>
-    <background>background\bg_clippy</background>
     <background>background\bg_beach</background>
     <background>background\bg_beach2</background>
+    <background>background\background0</background>
+    <background>background\bg_credits</background>
+    <background>background\bg_jungle</background>
+    <background>background\bg_lady_chillin</background>
+    <background>background\bg_laptop</background>
+    <background>background\bg_watching</background>
+    <background>background\bg_clippy</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -169,11 +178,17 @@
     <object>objects\object31</object>
     <object>objects\obj_paperclip</object>
     <object>objects\obj_clips</object>
+    <object>objects\Obj_storyboard_controller</object>
+    <object>objects\Obj_txt_CREDITS</object>
+    <object>objects\Obj_txt_PLAY</object>
+    <object>objects\obj_startOver</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room0</room>
     <room>rooms\Level1</room>
     <room>rooms\Level2</room>
     <room>rooms\Level3</room>
+    <room>rooms\room4</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
